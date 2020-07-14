@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这是首页<br/>
+{%  if url %}
+{{ url }}
+{% else %}
+无URL
+{% endif %}
+{{ list.1 }}
+{{ dict.name }}
+<hr/>
+{% for foo in list %}
+    {% if foo>3 %}
+        {{ foo }}<br/>
+
+    {% endif %}
+
+{% endfor %}
+{{ dict.name | reverse }}
+
+</body>
+</html>
